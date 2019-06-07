@@ -1,4 +1,3 @@
-var promise = require('es6-promise');
 
 var promise1 = new Promise(function(fulfill, reject) {
     setTimeout(function() {
@@ -11,3 +10,13 @@ promise1.then(function(value) {
 })
 
 //console.log(promise1)
+
+// Solution
+// var promise = new Promise(function (fulfill, reject) {
+
+//     setTimeout(function () {
+//       fulfill('FULFILLED!');
+//     }, 300);
+//   });
+
+//   promise.then(console.log);
